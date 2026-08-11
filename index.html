@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>365 Tage wir</title>
+  <meta name="description" content="Ein Jahr voller Erinnerungen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#33272a;--muted:#806d70;--cream:#fbf5f2;--paper:#fffaf8;--rose:#b76470;--rose-dark:#8d4552;--blush:#f2d8d4;--line:#eadbd7;--shadow:0 18px 45px rgba(83,48,55,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);background:var(--cream);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6}a{color:inherit}.container{width:min(1080px,calc(100% - 40px));margin:0 auto}.eyebrow{margin:0 0 14px;color:var(--rose-dark);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}h1,h2,h3{line-height:1.08;text-wrap:balance}h1,h2{font-family:'Playfair Display',Georgia,serif;font-weight:500}h1{max-width:740px;margin:0;font-size:clamp(3.1rem,9vw,7rem);letter-spacing:-.055em}h2{margin:0 0 16px;font-size:clamp(2.2rem,5vw,4rem);letter-spacing:-.035em}p{max-width:62ch}
+    .hero{position:relative;min-height:700px;display:flex;align-items:center;overflow:hidden;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.82),transparent 25%),linear-gradient(135deg,#f7e5e1 0%,#f8efeb 48%,#efd4d0 100%)}.hero:after{content:'';position:absolute;right:-10%;bottom:-34%;width:70vw;height:70vw;border:1px solid rgba(141,69,82,.16);border-radius:50%;box-shadow:0 0 0 38px rgba(141,69,82,.035),0 0 0 76px rgba(141,69,82,.025)}.hero-content{position:relative;z-index:1;padding:100px 0 86px}.hero-subtitle{margin:24px 0 36px;color:var(--muted);font-size:clamp(1.05rem,2vw,1.35rem)}.hero-date{margin:0 0 28px;font-size:.9rem;color:var(--rose-dark);font-weight:600}.counter{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 10px}.counter-box{min-width:105px;padding:16px 18px 13px;border:1px solid rgba(141,69,82,.16);border-radius:16px;background:rgba(255,250,248,.64);box-shadow:0 8px 22px rgba(83,48,55,.06);backdrop-filter:blur(8px)}.counter-number{display:block;color:var(--rose-dark);font-size:1.8rem;font-weight:700;line-height:1}.counter-label{display:block;margin-top:5px;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.1em}
+    section{padding:105px 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:36px}.section-heading p{margin:0;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:110px;gap:14px}.photo-card{position:relative;min-height:220px;overflow:hidden;border-radius:20px;background:var(--blush);box-shadow:var(--shadow)}.photo-card:nth-child(1){grid-column:span 7;grid-row:span 4}.photo-card:nth-child(2){grid-column:span 5;grid-row:span 3}.photo-card:nth-child(3){grid-column:span 5;grid-row:span 3}.photo-card:nth-child(4){grid-column:span 4;grid-row:span 3}.photo-card:nth-child(5){grid-column:span 4;grid-row:span 3}.photo-card:nth-child(6){grid-column:span 4;grid-row:span 3}.photo-card:nth-child(7){grid-column:span 6;grid-row:span 3}.photo-card:nth-child(8){grid-column:span 6;grid-row:span 3}.photo-card img{display:block;width:100%;height:100%;object-fit:cover}.caption{position:absolute;right:12px;bottom:12px;left:12px;padding:10px 12px;border-radius:11px;background:rgba(51,39,42,.72);color:white;font-size:.82rem;backdrop-filter:blur(6px)}
+    .moments-section{background:var(--paper)}.moments{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.moment{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:24px;border:1px solid var(--line);border-radius:18px;background:#fffdfa}.moment-number{color:var(--rose);font-family:'Playfair Display',Georgia,serif;font-size:2.2rem;line-height:1}.moment h3{margin:0 0 6px;font-size:1rem}.moment p{margin:0;color:var(--muted);font-size:.92rem}.final-section{text-align:center;background:#ead0cc}.final-section p{margin:0 auto 28px;color:var(--muted)}.song-card{width:min(560px,100%);margin:30px auto 0;padding:28px;border-radius:20px;background:rgba(255,250,248,.7);box-shadow:var(--shadow)}.song-card h3{margin:0 0 6px;font-family:'Playfair Display',Georgia,serif;font-size:1.7rem}.song-card p{margin:0 auto 20px;color:var(--muted)}.button{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:12px 20px;border-radius:999px;background:var(--rose-dark);color:white;font-size:.92rem;font-weight:700;text-decoration:none;box-shadow:0 8px 18px rgba(141,69,82,.2);transition:transform .18s ease,background .18s ease}.button:hover,.button:focus-visible{background:#713743;transform:translateY(-2px)}footer{padding:26px 20px;color:var(--muted);text-align:center;font-size:.82rem}
+    @media(max-width:700px){.container{width:min(100% - 28px,560px)}.hero{min-height:650px}.hero-content{padding:76px 0}section{padding:72px 0}.section-heading{display:block}.section-heading p{margin-top:12px}.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px;gap:10px}.photo-card,.photo-card:nth-child(n){grid-column:span 1;grid-row:span 1;min-height:170px}.photo-card:nth-child(1),.photo-card:nth-child(4){grid-column:span 2}.moments{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Für uns</p>
+        <h1>365 Tage wir</h1>
+        <p class="hero-subtitle">Ein Jahr voller Erinnerungen.</p>
+        <p class="hero-date">Seit dem 16. August 2025</p>
+        <div class="counter" aria-live="polite">
+          <div class="counter-box"><span class="counter-number" id="days">—</span><span class="counter-label">Tage</span></div>
+          <div class="counter-box"><span class="counter-number" id="months">—</span><span class="counter-label">Monate</span></div>
+          <div class="counter-box"><span class="counter-number" id="years">—</span><span class="counter-label">Jahre</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fotos">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Einfach wir</p><h2>Unsere Fotos</h2></div><p>Eine Sammlung unserer schönsten, lustigsten und liebsten Momente.</p></div>
+        <div class="gallery">
+          <div class="photo-card"><img src="bilder/Bild1.jpg" alt="Unser gemeinsamer Moment"><div class="caption">Ein Moment, den wir nicht vergessen.</div></div>
+          <div class="photo-card"><img src="bilder/Bild2.jpg" alt="Unser gemeinsamer Moment"></div>
+          <div class="photo-card"><img src="bilder/Bild3.jpg" alt="Unser Lieblingsmoment"><div class="caption">Unser Lieblingsmoment.</div></div>
+          <div class="photo-card"><img src="bilder/Bild4.jpg" alt="Unser gemeinsamer Moment"></div>
+          <div class="photo-card"><img src="bilder/Bild5.jpg" alt="Unser gemeinsamer Moment"></div>
+          <div class="photo-card"><img src="bilder/Bild6.jpg" alt="Unser gemeinsamer Moment"></div>
+          <div class="photo-card"><img src="bilder/Bild7.jpg" alt="Ein schöner gemeinsamer Moment"><div class="caption">Viel zu schön, um es nicht zu teilen.</div></div>
+          <div class="photo-card"><img src="bilder/Bild8.jpg" alt="Unser gemeinsamer Moment"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="moments-section" id="momente">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Unsere Auswahl</p><h2>Top 10 Momente</h2></div><p>Die Texte kannst du später durch eure eigenen Erinnerungen ersetzen.</p></div>
+        <div class="moments">
+          <article class="moment"><div class="moment-number">01</div><div><h3>Unser Anfang</h3><p>Der Moment, ab dem alles anders wurde.</p></div></article>
+          <article class="moment"><div class="moment-number">02</div><div><h3>Unser erster Ausflug</h3><p>Kein perfekter Plan, aber ein perfekter Tag.</p></div></article>
+          <article class="moment"><div class="moment-number">03</div><div><h3>Der lustigste Abend</h3><p>Wir wissen bis heute nicht, warum das so lustig war.</p></div></article>
+          <article class="moment"><div class="moment-number">04</div><div><h3>Unser Lieblingsort</h3><p>Da müssen wir unbedingt wieder hin.</p></div></article>
+          <article class="moment"><div class="moment-number">05</div><div><h3>Der gemütlichste Tag</h3><p>Nichts Besonderes gemacht – und trotzdem war es schön.</p></div></article>
+          <article class="moment"><div class="moment-number">06</div><div><h3>Unser größtes Abenteuer</h3><p>Ein bisschen chaotisch, aber genau deshalb unvergesslich.</p></div></article>
+          <article class="moment"><div class="moment-number">07</div><div><h3>Unser Insider</h3><p>Ein Moment, den wahrscheinlich nur wir verstehen.</p></div></article>
+          <article class="moment"><div class="moment-number">08</div><div><h3>Spontan und perfekt</h3><p>Nicht geplant und trotzdem genau richtig.</p></div></article>
+          <article class="moment"><div class="moment-number">09</div><div><h3>Ein besonderer Tag</h3><p>Davon erzählen wir bestimmt noch lange.</p></div></article>
+          <article class="moment"><div class="moment-number">10</div><div><h3>Heute</h3><p>Ein Jahr wir – und noch lange nicht genug.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-section" id="song">
+      <div class="container"><p class="eyebrow">Zum Schluss</p><h2>Und jetzt beginnt unser zweites Jahr.</h2><p>Ein Lied für diesen Moment.</p><div class="song-card"><h3>Walzer</h3><p>Provinz</p><a class="button" href="https://www.youtube.com/watch?v=Wwp3bxfH0fw" target="_blank" rel="noopener noreferrer">Song abspielen</a></div></div>
+    </section>
+  </main>
+  <footer>Für uns · 16.08.2025</footer>
+  <script>
+    const startDate = new Date(2025, 7, 16, 0, 0, 0);
+    const days = Math.max(0, Math.floor((new Date() - startDate) / 86400000));
+    document.querySelector('#days').textContent = days.toLocaleString('de-DE');
+    document.querySelector('#months').textContent = Math.floor(days / 30.436875).toLocaleString('de-DE');
+    document.querySelector('#years').textContent = Math.floor(days / 365.2425).toLocaleString('de-DE');
+  </script>
+</body>
+</html>
